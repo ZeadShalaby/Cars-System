@@ -37,17 +37,18 @@ int main()
 	{
 		system("cls");
 
-		cout << "\n\n\t  PLEASE SELECT FROM THE MENUE  ";
-		cout << "\n\n\t Please choose one of the below options:   \n";
-		cout << "--------------------------------------\n";
-		cout << "1.Add a car \n";
-		cout << "2.Delete a car  \n";
-		cout << "3.Update car \n";
-		cout << "4.Find car  \n";
-		cout << "5.List cars \n";
-		cout << "6.Show statistics  \n";
-		cout << "7.exit \n";
-
+		cout << "\n\n\t    PLEASE SELECT FROM THE MENUE  ";
+		cout << "\n\n\t Please choose one of the below options:  \n \n";
+		cout << "--------------------------------------------------------\n\n";
+		cout << "(1).Add a car \n\n";
+		cout << "(2).Delete a car  \n\n";
+		cout << "(3).Update car \n\n";
+		cout << "(4).Find car  \n\n";
+		cout << "(5).List cars \n\n";
+		cout << "(6).Show statistics \n \n";
+		cout << "(7).exit \n\n";
+		cout<< "--------------------------------------------------------\n\n";
+        cout <<"Number of below is :  ";
 		cin >> choose;
 
 		readfile();
@@ -188,17 +189,23 @@ void readfile()						// READING THE INFORMATION FROM THE FILE
 
 
 
-
-
 void writefile()						// WRITING THE DATA INTO THE FILE
 {
 	ofstream outFile;
 	outFile.open("cars.txt");
 	int i = 0;
+    /*
+    to add name column in file
+    */
+
+    outFile << "IDCar"<< "\t  brand   "<<  "  \t model  "<<  "  \t  price  ";
+
+
 	for (i = 0; i < size; i++)
 	{
 		if (IDcar[i] == 0)
 			break;
+
 		outFile << "\n" << IDcar[i] << "          " << brand[i] <<  "          " << model[i] <<  "          " << price[i];
 
 	}
@@ -346,11 +353,13 @@ void searchcar()
 }
 
 //**************************************************************
+
 void displaydata()
 {
 	ifstream infile;
 
 	infile.open("cars.txt");
+
 	if (infile)
 	while (!infile.eof())
 	{
@@ -359,6 +368,8 @@ void displaydata()
 	}
 	infile.close();
 }
+
+//**************************************************************
 
 void deletecar()
 {
@@ -445,105 +456,3 @@ void sorting()
 
 
 
-
-
-/*
-/////////////  Codeforces 427A     //////////
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-int n,v,con=0,conn=0;
-cin>>n;
-for(int i=0;i<n;i++){
-    cin>>v;
-    if(v>0){
-        con+=v;
-        continue;
-    }
-    else if(v<0&&con>0){
-        con-=1;
-        continue;
-    }
-    else if(v<0){
-        conn++;
-}}
-cout<<conn;
-}
-///////   Codeforces 289A       //////////
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-int n,m,con=0;
-cin>>n>>m;
-for(int i=0;i<n;i++){
-    int s,e;
-    cin>>s>>e;
-    con+=e-s+1;
-     con%=m;
-}
-if(con!=0)
- con=m-con;
-    cout<<con;
-}
-////////////Codeforces 467A/////////
-
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-int n,con=0;
-cin>>n;
-for(int i=0;i<n;i++){
-    int p,q;
-    cin>>p>>q;
-   if(q-p>=2){
-    con++;
-}}
-cout<<con;
-}
-///////////////  A. Shaass and Oskols  /////////
-
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-int n,mx=100;
-cin>>n;
-int a[mx];
-for(int i=0;i<n;i++)
-    cin>>a[i];
-int b;
-cin>>b;
-for(int i=0;i<b;i++){
-int x,y;
-cin>>x>>y;
-x--;
-if(x!=0)
-    a[x-1]+=y-1;
-
-  if(x!=n-1)
-    a[x+1]+=a[x]-y;
-
-  a[x]=0;
-}
-
-for(int i=0;i<n;i++){
-    cout<<a[i]<<"\n";
-    #include<bits/stdc++.h>
-
-using namespace std;
-#define cin(vec) for(auto& i : (vec)) cin >> i;
-#define cout(vec) for(auto& i : (vec)) cout << i << " "; cout << "\n";
-#define int long long
-#define ull unsigned long long
-#define dd double
-#define endl "\n"
-#define all(v) ((v).begin()), ((v).end())
-#define gcd(a, b)  __gcd(arr, b)
-#define lcm(a, b) (arr * b) / (gcd(arr, b))
-#define mod(a, b) (arr - arr / b * b)
-#define fast ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(0);
-
-}}
-
-
-
-*/
