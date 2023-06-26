@@ -37,18 +37,18 @@ int main()
 	{
 		system("cls");
 
-		cout << "\n\n\t    PLEASE SELECT FROM THE MENUE  ";
-		cout << "\n\n\t Please choose one of the below options:  \n \n";
-		cout << "--------------------------------------------------------\n\n";
-		cout << "(1).Add a car \n\n";
+		cout << "\n\n\t                                     PLEASE SELECT FROM THE MENUE  ";
+		cout << "\n\n\t                               Please choose one of the below options:   \n\n";
+		cout << "------------------------------------------------------------------------------------------------------------------------\n\n";
+        cout << "(1).Add a car \n\n";
 		cout << "(2).Delete a car  \n\n";
 		cout << "(3).Update car \n\n";
 		cout << "(4).Find car  \n\n";
 		cout << "(5).List cars \n\n";
 		cout << "(6).Show statistics \n \n";
 		cout << "(7).exit \n\n";
-		cout<< "--------------------------------------------------------\n\n";
-        cout <<"Number of below is :  ";
+		cout << "------------------------------------------------------------------------------------------------------------------------\n\n";
+        cout <<"please input the number of the choice you want to excute : ";
 		cin >> choose;
 
 		readfile();
