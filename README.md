@@ -27,7 +27,7 @@
 ## About The Project
 
 
- <img src="https://i.imgur.com/bv8bEVh.png" alt="Logo" width="900" height="500">
+ <img src="https://i.imgur.com/xS7ewKo.png" alt="Logo" width="900" height="500">
  <br/>
 <p >
  <img src="https://i.imgur.com/z96h1vb.png" alt="project(Coise-User)" width="200" height="150">
