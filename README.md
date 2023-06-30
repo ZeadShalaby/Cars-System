@@ -28,12 +28,7 @@
 
  <img src="https://i.imgur.com/6T9cVJh.png" alt="Logo" width="900" height="500">
  <br/>
-<p >
- <img src="https://i.imgur.com/z96h1vb.png" alt="project(Coise-User)" width="200" height="150">
- <img src="https://i.imgur.com/6Xxnqhv.png" alt="project(Admin)" width="200" height="150">
- <img src="https://i.imgur.com/JE3vHEI.png" alt="project(User)" width="200" height="150">
- <img src="https://i.imgur.com/UKpjKbc.png" alt="project(Login-User)" width="200" height="150">
-</p>
+
 
 ## Cars-System
 * The Car  Management System uses data file processing in C++ to track entries and provide management functionality to users.
